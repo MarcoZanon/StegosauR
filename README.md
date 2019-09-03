@@ -1,2 +1,48 @@
 # StegosauR
 R package for Cryptographic Steganography
+
+```StegosauR``` is a package for [R](https://cran.r-project.org/) that allows to hide a text message inside a tiff image.
+
+A more detailed description can be found [on my website](https://www.zanon.xyz/cryptographic_steganography_StegosauR_intro.html).
+
+## Installation procedure
+
+There are a couple of ways to install ```StegosauR```. Both of them start with downloading the StegosauR_0.1.0.tar.gz file contained in this GitHub repository.
+
+### method 1
+  * Install R package "devtools" by typing ```install.packages("devtools")``` in the R shell. 
+  
+  * Type ```library(devtools)``` to load the package you just installed.
+  
+  * Install ```StegosauR``` with the command ```devtools::install_local("<replace with_file_path>/StegosauR_0.1.0.tar.gz")```.
+
+
+### method 2
+  * Install the necessary dependencies first with ```install.packages(c("jpeg","tiff","png","Unicode","dplyr","openssl","magrittr"))```.
+  
+  * Then install ```StegosauR``` by typing ```install.packages("E:/cross-test/StegosauR_0.1.0.tar.gz", repos = NULL, type = "source")```.
+
+
+
+Once the installation is complete, just type in ```library(StegosauR)``` to load the package.
+
+
+### Quick example
+
+``` {r}
+# pick an image
+img <- "image_name.jpg"
+
+# message to encode
+txt <- "Message stored with R package StegosauR v.0.1.0"
+
+# add a password
+psw <- "password_123"
+
+#encode the message
+encosaur(input=img, output="new_image_name", message=txt, secret=psw)
+
+#decode message
+decosaur(input="new_image_name.tiff", secret=psw)
+
+```
