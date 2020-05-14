@@ -20,7 +20,9 @@ There are a couple of ways to install ```StegosauR```. Both of them start with d
 ### method 2
   * Install the necessary dependencies first with ```install.packages(c("jpeg","tiff","png","Unicode","dplyr","openssl","magrittr"))```.
   
-  * Then install ```StegosauR``` by typing ```install.packages("E:/cross-test/StegosauR_0.1.0.tar.gz", repos = NULL, type = "source")```.
+  * Download the StegosauR_0.1.0.tar.gz file from this page
+  
+  * Then install ```StegosauR``` by typing ```install.packages("C:/replace all this part with the path to your file/StegosauR_0.1.0.tar.gz", repos = NULL, type = "source")```.
 
 
 
