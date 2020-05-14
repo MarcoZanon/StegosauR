@@ -6,9 +6,9 @@ R package for Cryptographic Steganography
 A more detailed description can be found [on my website](https://www.zanon.xyz/cryptographic_steganography_StegosauR_intro.html).
 
 ## Preliminary note
-StegosauR has been tested with different R versions up R 3.6.3.
+```StegosauR``` has been tested with different R versions up R 3.6.3.
 
-StegosauR works with R x64 4.0.0, but crashes with R i386 4.0.0. The problem appears to be located within package [tiff](https://cran.r-project.org/web/packages/tiff/index.html), which is necessary to run StegosauR. More in detail, its function ```readTIFF()``` crashes without returning any error.   
+```StegosauR``` works with R x64 4.0.0, but crashes with R i386 4.0.0. The problem appears to be located within package [tiff](https://cran.r-project.org/web/packages/tiff/index.html), which is necessary to run StegosauR. More in detail, its function ```readTIFF()``` crashes without returning any error.   
 
 ## Installation procedure
 
